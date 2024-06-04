@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="jmixpm-flow-base">
+        <dropForeignKeyConstraint baseTableName="TIME_ENTRY" constraintName="FK_TIME_ENTRY_ON_TASK"/>
+    </changeSet>
+    <changeSet id="2" author="jmixpm-flow-base">
+        <dropForeignKeyConstraint baseTableName="TIME_ENTRY" constraintName="FK_TIME_ENTRY_ON_USER"/>
+    </changeSet>
+    <changeSet id="3" author="jmixpm-flow-base">
+        <dropTable cascadeConstraints="true" tableName="TIME_ENTRY"/>
+    </changeSet>
+</databaseChangeLog>
