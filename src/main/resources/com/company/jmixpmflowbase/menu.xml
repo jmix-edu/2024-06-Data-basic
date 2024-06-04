@@ -5,7 +5,6 @@
         <item view="User.list" title="msg://com.company.jmixpmflowbase.view.user/UserListView.title"/>
         <item view="Project.list" title="msg://com.company.jmixpmflowbase.view.project/projectListView.title"/>
         <item view="Task_.list" title="msg://com.company.jmixpmflowbase.view.task/taskListView.title"/>
-        <item view="TimeEntry.list" title="msg://com.company.jmixpmflowbase.view.timeentry/timeEntryListView.title"/>
     </menu>
 
 </menu-config>
